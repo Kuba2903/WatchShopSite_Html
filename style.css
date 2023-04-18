@@ -12,13 +12,11 @@ body{
 
 header{
     width: 100%;
-    background-color: aqua;
-    display: inline-block;
+    background-color: white;
 }
 
 #title{
     display: inline-block;
-    
 }
 
 #search{
@@ -28,6 +26,7 @@ header{
     position: relative;
     padding: 2px 2px;
     margin: 0;
+    border: 3px solid #a7b0b0;
 }
 
 input[type=search]{
@@ -65,4 +64,49 @@ input[type=search]:focus{
     -webkit-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
     -moz-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
     box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
+}
+
+#icons{
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.icon:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+nav{
+    text-align: center;
+    width: 1000px;
+    height: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+ol{
+    list-style-type: none;
+}
+
+ol > li{
+    float: left;
+    padding: 5px;
+    margin-left: 65px;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+    font-size: 18px;
+}
+
+
+ol > li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }

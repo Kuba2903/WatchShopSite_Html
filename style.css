@@ -5,7 +5,7 @@ body{
 
 #container{
     width: 1200px;
-    height: auto;
+    height: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -13,6 +13,7 @@ body{
 header{
     width: 100%;
     background-color: white;
+    border-bottom: 2px dashed black;
 }
 
 #title{
@@ -84,23 +85,23 @@ input[type=search]:focus{
 
 nav{
     text-align: center;
-    width: 1000px;
+    width: 100%;
     height: 17px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
 }
 
+
+
 ol{
     list-style-type: none;
+    margin: 0;
 }
 
 ol > li{
     float: left;
-    padding: 5px;
-    margin-left: 65px;
-    border-right: 2px dashed black;
-    border-left: 2px dashed black;
+    margin-left: 50px;
     font-size: 18px;
 }
 
@@ -109,4 +110,44 @@ ol > li:hover{
     background-color: black;
     color: white;
     cursor: pointer;
+    text-decoration: underline white;
+    border-radius: 4px;
+}
+
+
+ol > li:hover > ul{
+    display: block;
+}
+
+ol > li > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li > ul > li{
+    background-color: white;
+    color: black;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed black;
+    border-radius: 4px;
+}
+
+ol > li > ul > li:hover{
+    background-color: black;
+    color: white;
+}
+
+ol > li > ul > li > a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+ol > li > ul > li > a:hover{
+    background-color: black;
+    color: white;
 }

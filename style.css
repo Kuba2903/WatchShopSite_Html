@@ -86,7 +86,7 @@ input[type=search]:focus{
 nav{
     text-align: center;
     width: 100%;
-    height: 17px;
+    height: 19px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -150,4 +150,91 @@ ol > li > ul > li > a{
 ol > li > ul > li > a:hover{
     background-color: black;
     color: white;
+}
+
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.outside{
+    width: 500px;
+    display: inline-block;
+    overflow: hidden;
+    height: auto;
+}
+
+.outside:first-child{
+    margin-right: 50px;
+}
+
+.outside:last-child{
+    margin-left: 50px;
+}
+
+.pics{
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease-in-out;   
+}
+
+.pics:hover{
+    transform: scale(1.05);
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+}
+
+.link2{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.pics .link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #111;
+    left: 0px;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-weight: 700;
+}
+
+.pics .link2{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    left: 0px;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-weight: 700;
+}
+
+.pics:hover .link{
+    opacity: 0.8;
+}
+
+.pics:hover .link2{
+    opacity: 0.8;
+}
+
+.outside2{
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    height: auto;
 }

@@ -10,6 +10,12 @@
             orders.Add(order.Id, order);
         }
 
+        public void DeleteOrder(int id) => orders.Remove(id);
+
+        public WatchOrder? FindOrder(int id) => orders[id];
+
         public List<WatchOrder> GetOrders() => orders.Values.ToList();
+
+        public void UpdateOrder(WatchOrder order) => orders[order.Id] = order;
     }
 }

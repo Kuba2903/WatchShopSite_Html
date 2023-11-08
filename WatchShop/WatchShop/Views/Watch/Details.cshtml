@@ -1,0 +1,17 @@
+﻿@model WatchOrder
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form>
+    <label class="form-control" asp-for="Watch" >Watch: @Model.Watch</label>
+    <label class="form-control" asp-for="FirstName" >First name: @Model.FirstName</label>
+    <label class="form-control" asp-for="Surname">Surname: @Model.Surname</label>
+    <label class="form-control" asp-for="City">City: @Model.City</label>
+    <label class="form-control" asp-for="StreetAddress">Street address: @Model.StreetAddress</label>
+    <label class="form-control" asp-for="ZipCode">Zip code: @Model.ZipCode</label>
+    <label class="form-control" asp-for="Phone">Phone: @Model.Phone</label>
+    <button asp-action="Index" asp-controller="Watch" type="submit">Back</button>
+</form>

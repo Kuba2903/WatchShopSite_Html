@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bigie\\source\\repos\\WatchShop\\WatchShop\\WatchShop.csproj": {}
+    "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\WatchShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bigie\\source\\repos\\WatchShop\\WatchShop\\WatchShop.csproj": {
+    "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\WatchShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bigie\\source\\repos\\WatchShop\\WatchShop\\WatchShop.csproj",
+        "projectUniqueName": "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\WatchShop.csproj",
         "projectName": "WatchShop",
-        "projectPath": "C:\\Users\\bigie\\source\\repos\\WatchShop\\WatchShop\\WatchShop.csproj",
+        "projectPath": "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\WatchShop.csproj",
         "packagesPath": "C:\\Users\\bigie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bigie\\source\\repos\\WatchShop\\WatchShop\\obj\\",
+        "outputPath": "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bigie\\AppData\\Roaming\\NuGet\\NuGet.Config",

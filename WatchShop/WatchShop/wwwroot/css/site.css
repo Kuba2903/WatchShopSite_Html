@@ -1,26 +1,26 @@
-body{
+body {
     background-color: #a7b0b0;
     font-family: 'Lato', sans-serif;
 }
 
-#container{
+#container {
     width: 1200px;
     height: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header{
+header {
     width: 100%;
     background-color: white;
     border-bottom: 2px dashed black;
 }
 
-#title{
+#title {
     display: inline-block;
 }
 
-#search{
+#search {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -30,26 +30,29 @@ header{
     border: 3px solid #a7b0b0;
 }
 
-input[type=search]{
+input[type=search] {
     width: 250px;
     height: 30px;
     border-radius: 5px;
     border: none;
-
 }
 
-#input_img{
-    position:absolute; bottom:12px; left:230px; width:10px; height:10px;
+#input_img {
+    position: absolute;
+    bottom: 12px;
+    left: 230px;
+    width: 10px;
+    height: 10px;
 }
 
-input[type=search]:focus{
+input[type=search]:focus {
     border: 2px solid black;
     -webkit-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
     -moz-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
     box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
 }
 
-#searchBut{
+#searchBut {
     width: 70px;
     height: 25px;
     margin-left: 5px;
@@ -58,32 +61,32 @@ input[type=search]:focus{
     border-radius: 5px;
 }
 
-#searchBut:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    -webkit-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
-    box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
-}
+    #searchBut:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        -webkit-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
+        box-shadow: 14px 8px 27px -5px rgba(66, 68, 90, 1);
+    }
 
-#icons{
+#icons {
     display: inline-block;
     margin-left: 200px;
 }
 
-.icon{
+.icon {
     display: inline-block;
 }
 
-.icon:hover{
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-    text-decoration: underline;
-}
+    .icon:hover {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border-radius: 5px;
+        text-decoration: underline;
+    }
 
-nav{
+nav {
     text-align: center;
     width: 100%;
     height: 19px;
@@ -94,66 +97,66 @@ nav{
 
 
 
-ol{
+ol {
     list-style-type: none;
     margin: 0;
 }
 
-ol > li{
-    float: left;
-    margin-left: 50px;
-    font-size: 18px;
-}
+    ol > li {
+        float: left;
+        margin-left: 50px;
+        font-size: 18px;
+    }
 
 
-ol > li:hover{
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    text-decoration: underline white;
-    border-radius: 4px;
-}
+        ol > li:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline white;
+            border-radius: 4px;
+        }
 
 
-ol > li:hover > ul{
-    display: block;
-}
+            ol > li:hover > ul {
+                display: block;
+            }
 
-ol > li > ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 40px;
-    display: none;
-}
+        ol > li > ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            height: 40px;
+            display: none;
+        }
 
-ol > li > ul > li{
-    background-color: white;
-    color: black;
-    position: relative;
-    z-index: 100;
-    border-top: 1px dashed black;
-    border-radius: 4px;
-}
+            ol > li > ul > li {
+                background-color: white;
+                color: black;
+                position: relative;
+                z-index: 100;
+                border-top: 1px dashed black;
+                border-radius: 4px;
+            }
 
-ol > li > ul > li:hover{
-    background-color: black;
-    color: white;
-}
+                ol > li > ul > li:hover {
+                    background-color: black;
+                    color: white;
+                }
 
-ol > li > ul > li > a{
-    text-decoration: none;
-    background-color: white;
-    color: black;
-}
+                ol > li > ul > li > a {
+                    text-decoration: none;
+                    background-color: white;
+                    color: black;
+                }
 
-ol > li > ul > li > a:hover{
-    background-color: black;
-    color: white;
-}
+                    ol > li > ul > li > a:hover {
+                        background-color: black;
+                        color: white;
+                    }
 
 
-section{
+section {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -161,44 +164,44 @@ section{
     text-align: center;
 }
 
-.outside{
+.outside {
     width: 500px;
     display: inline-block;
     overflow: hidden;
     height: auto;
 }
 
-.outside:first-child{
-    margin-right: 50px;
-}
+    .outside:first-child {
+        margin-right: 50px;
+    }
 
-.outside:last-child{
-    margin-left: 50px;
-}
+    .outside:last-child {
+        margin-left: 50px;
+    }
 
-.pics{
+.pics {
     display: inline-block;
     position: relative;
-    transition: all 0.5s ease-in-out;   
+    transition: all 0.5s ease-in-out;
 }
 
-.pics:hover{
-    transform: scale(1.05);
-}
+    .pics:hover {
+        transform: scale(1.05);
+    }
 
-.link{
+.link {
     text-decoration: none;
     color: white;
     font-size: 27px;
 }
 
-.link2{
+.link2 {
     text-decoration: none;
     color: white;
     font-size: 17px;
 }
 
-.pics .link{
+.pics .link {
     position: absolute;
     display: block;
     width: 100%;
@@ -211,7 +214,7 @@ section{
     font-weight: 700;
 }
 
-.pics .link2{
+.pics .link2 {
     position: absolute;
     display: block;
     width: 100%;
@@ -224,22 +227,22 @@ section{
     font-weight: 700;
 }
 
-.pics:hover .link{
+.pics:hover .link {
     opacity: 0.8;
 }
 
-.pics:hover .link2{
+.pics:hover .link2 {
     opacity: 0.8;
 }
 
-.outside2{
+.outside2 {
     width: 300px;
     display: inline-block;
     overflow: hidden;
     height: auto;
 }
 
-aside{
+aside {
     margin-left: auto;
     margin-right: auto;
     margin-top: 90px;
@@ -248,23 +251,23 @@ aside{
     font-size: 20px;
 }
 
-.watch{
+.watch {
     display: inline-block;
     text-align: center;
     margin-left: 10px;
 }
 
 
-.watchimg{
+.watchimg {
     transition: all 0.5s ease-in-out;
 }
 
-.watchimg:hover{
-    transform: scale(0.9);
-}
+    .watchimg:hover {
+        transform: scale(0.9);
+    }
 
 
-footer{
+footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 90px;
@@ -273,34 +276,34 @@ footer{
     font-size: 10px;
 }
 
-.fb{
+.fb {
     display: inline-block;
     transition: all 0.5s ease-in-out;
 }
 
-.yt{
+.yt {
     display: inline-block;
     transition: all 0.5s ease-in-out;
 }
 
-.ig{
+.ig {
     display: inline-block;
     transition: all 0.5s ease-in-out;
 }
 
-.fb:hover{
+.fb:hover {
     background-color: #2195ed;
 }
 
-.yt:hover{
+.yt:hover {
     background-color: #d62206;
 }
 
-.ig:hover{
-    background-color:#ba68e3;
+.ig:hover {
+    background-color: #ba68e3;
 }
 
-.link3{
+.link3 {
     text-decoration: none;
     color: black;
     font-size: 10px;

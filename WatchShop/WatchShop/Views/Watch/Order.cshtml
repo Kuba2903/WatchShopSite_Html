@@ -1,0 +1,52 @@
+﻿@model WatchOrder
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form asp-action="Order" asp-controller="Watch" method="post">
+    <div>
+        <label asp-for="Brands_Models"></label>
+        <select asp-for="Brands_Models" class="form-control">
+            @foreach (var key in Model.Brands_Models)
+            {
+                <option value="@key">@key</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label asp-for="FirstName"></label>
+        <div>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="FirstName" />
+    </div>
+
+    <div>
+        <label asp-for="Surname"></label>
+        <div>
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="Surname" />
+    </div>
+
+    <div>
+        <label asp-for="Address"></label>
+        <div>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="Address" />
+    </div>
+
+    <div>
+        <label asp-for="Phone"></label>
+        <div>
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="Phone" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

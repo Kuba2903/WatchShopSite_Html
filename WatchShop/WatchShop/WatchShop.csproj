@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\img\bulova.jpg" />
+    <Content Remove="wwwroot\img\bulova2.jpg" />
+    <Content Remove="wwwroot\img\cart.png" />
+    <Content Remove="wwwroot\img\citizen.jpg" />
+    <Content Remove="wwwroot\img\fb.png" />
+    <Content Remove="wwwroot\img\icon.jpg" />
+    <Content Remove="wwwroot\img\ins.png" />
+    <Content Remove="wwwroot\img\jewelry.jpg" />
+    <Content Remove="wwwroot\img\kid.jpg" />
+    <Content Remove="wwwroot\img\login.png" />
+    <Content Remove="wwwroot\img\men.jpg" />
+    <Content Remove="wwwroot\img\search.png" />
+    <Content Remove="wwwroot\img\signup.png" />
+    <Content Remove="wwwroot\img\smart.jpg" />
+    <Content Remove="wwwroot\img\women.jpg" />
+    <Content Remove="wwwroot\img\yt.png" />
+    <Content Remove="wwwroot\img\zepelin.jpg" />
+    <Content Remove="wwwroot\img\zepelin2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\bulova.jpg" />
+    <None Include="wwwroot\img\bulova2.jpg" />
+    <None Include="wwwroot\img\cart.png" />
+    <None Include="wwwroot\img\citizen.jpg" />
+    <None Include="wwwroot\img\fb.png" />
+    <None Include="wwwroot\img\icon.jpg" />
+    <None Include="wwwroot\img\ins.png" />
+    <None Include="wwwroot\img\jewelry.jpg" />
+    <None Include="wwwroot\img\kid.jpg" />
+    <None Include="wwwroot\img\login.png" />
+    <None Include="wwwroot\img\men.jpg" />
+    <None Include="wwwroot\img\search.png" />
+    <None Include="wwwroot\img\signup.png" />
+    <None Include="wwwroot\img\smart.jpg" />
+    <None Include="wwwroot\img\women.jpg" />
+    <None Include="wwwroot\img\yt.png" />
+    <None Include="wwwroot\img\zepelin.jpg" />
+    <None Include="wwwroot\img\zepelin2.jpg" />
+  </ItemGroup>
+
+</Project>

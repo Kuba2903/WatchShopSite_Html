@@ -1,8 +1,8 @@
-﻿namespace WatchShop.Models
+﻿namespace WatchShop.Models.Services
 {
     public class MemoryWatchService : IWatchService
     {
-        static Dictionary<int,WatchOrder> orders = new Dictionary<int,WatchOrder>();
+        static Dictionary<int, WatchOrder> orders = new Dictionary<int, WatchOrder>();
         public void AddOrder(WatchOrder order)
         {
             int id = orders.Keys.Count != 0 ? orders.Keys.Max() : 0;

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\wwwroot\\img\\order.png",
+      "PackagePath": "staticwebassets\\img\\order.png"
+    },
+    {
       "Id": "C:\\Projekty\\strona_zegarkowa\\WatchShop\\WatchShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

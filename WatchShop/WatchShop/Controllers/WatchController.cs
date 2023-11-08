@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WatchShop.Models;
+using WatchShop.Models.Services;
 
 namespace WatchShop.Controllers
 {
@@ -18,8 +19,7 @@ namespace WatchShop.Controllers
         }
 
         [HttpGet]
-        [ActionName("Order")]
-        public IActionResult OrderGet()
+        public IActionResult Order()
         {
             return View();
         }

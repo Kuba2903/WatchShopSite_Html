@@ -1,4 +1,4 @@
-using WatchShop.Models;
+using WatchShop.Models.Services;
 
 namespace WatchShop
 {

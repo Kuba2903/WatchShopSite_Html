@@ -1,4 +1,4 @@
-﻿namespace WatchShop.Models
+﻿namespace WatchShop.Models.Services
 {
     public interface IWatchService
     {

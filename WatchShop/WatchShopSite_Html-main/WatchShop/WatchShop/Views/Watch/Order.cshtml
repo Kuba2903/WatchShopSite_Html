@@ -1,0 +1,66 @@
+﻿@model WatchOrder
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form asp-action="Order" asp-controller="Watch" method="post">
+    <div>
+        <label asp-for="Watch"></label>
+        <div>
+            <span asp-validation-for="Watch" class="text-danger"></span>
+        </div>
+        <select class="form-control" asp-for="Watch" asp-items="@Html.GetEnumSelectList<Watches>()"></select>
+    </div>
+
+    <div>
+        <label asp-for="FirstName"></label>
+        <div>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="FirstName" />
+    </div>
+
+    <div>
+        <label asp-for="Surname"></label>
+        <div>
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="Surname" />
+    </div>
+
+    <div>
+        <label asp-for="City"></label>
+        <div>
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="City" />
+    </div>
+
+    <div>
+        <label asp-for="StreetAddress"></label>
+        <div>
+            <span asp-validation-for="StreetAddress" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="StreetAddress" />
+    </div>
+
+    <div>
+        <label asp-for="ZipCode"></label>
+        <div>
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="ZipCode" />
+    </div>
+
+    <div>
+        <label asp-for="Phone"></label>
+        <div>
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <input class="form-control" asp-for="Phone" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,249 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online watch shop</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" href="img/icon.jpg" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <header>
+                <div id="title">
+                    <h1>Online watch shop <img src="img/icon.jpg" alt="watch icon" height="40" width="40"></h1>
+                </div>
+                <div id="search">
+                    <input type="search" placeholder="search for your product">
+                    <img src="img/search.png" id="input_img">
+                    <button id="searchBut" type="submit">Search</button>
+                </div>
+                
+                <div id="icons">
+                    <div class="icon">
+                        Sign up
+                        <img src="img/signup.png" alt="sign up" height="30" width="30">
+                    </div>
+                    <div class="icon">
+                        Login
+                        <img src="img/login.png" alt="login" height="30" width="30">
+                    </div>
+                    <a asp-action="Index" asp-controller="Watch">
+                    <div class="icon">
+                        Cart
+                        <img src="img/cart.png" alt="cart" height="30" width="30">
+                        </div>
+                    </a>
+
+                    <a asp-action="Order" asp-controller="Watch">
+                        <div class="icon">
+                            Make order
+                            <img src="img/order.png" alt="order" height="30" width="30"/>
+                        </div>
+                    </a>
+
+                </div>
+            </header>
+
+            <nav>
+
+                <ol>
+                    <li> Men
+                        <ul>
+                            <li><a href="#"> Elegant</a></li>
+                            <li><a href="#"> Fashion</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Limited</a></li>
+                        </ul>
+                    </li>
+                    <li>Women
+                        <ul>
+                            <li><a href="#">Elegant</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Limited</a></li>
+                        </ul>
+                    </li>
+                    <li>Smartwatches
+                        <ul>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Coros</a></li>
+                            <li><a href="#">Garett</a></li>
+                            <li><a href="#">Pacific</a></li>
+                            <li><a href="#">Manta</a></li>
+                        </ul>
+                    </li>
+                    <li>Bestsellers
+                        <ul>
+                            <li><a href="#">Bulova</a></li>
+                            <li><a href="#">Casio</a></li>
+                            <li><a href="#">Citizen</a></li>
+                            <li><a href="#">Seiko</a></li>
+                            <li><a href="#">Tissot</a></li>
+                        </ul>
+                    </li>
+                    <li>Sale
+                        <ul>
+                            <li><a href="#">10%</a></li>
+                            <li><a href="#">20%</a></li>
+                            <li><a href="#">30%</a></li>
+                            <li><a href="#">40%</a></li>
+                            <li><a href="#">50%</a></li>
+                        </ul>
+
+                    </li>
+                    <li>Accessories
+                        <ul>
+                            <li><a href="#">Strap</a></li>
+                            <li><a href="#">Alarm clocs</a></li>
+                        </ul>
+                    </li>
+                    <li>Jewerly
+                        <ul>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Bransolets</a></li>
+                            <li><a href="#">Ear rings</a></li>
+                            <li><a href="#">Limited</a></li>
+                            <li><a href="#">Premium</a></li>
+                        </ul>
+                    </li>
+                    <li>Premium
+                        <ul>
+                            <li><a href="#">Rolex</a></li>
+                            <li><a href="#">Patek Philippe</a></li>
+                        </ul>
+                    </li>
+                    <li>Brands
+                        <ul>
+                            <li><a href="#">Bulova</a></li>
+                            <li><a href="#">Casio</a></li>
+                            <li><a href="#">Citizen</a></li>
+                            <li><a href="#">Seiko</a></li>
+                            <li><a href="#">Tissot</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </nav>
+
+            <section>
+                <div class="outside">
+                    <div class="pics">
+                        <a href="#"> <img src="img/men.jpg" alt="men watches" height="400" width="500"></a>
+                        <a class="link" href="#"><p>For him</p></a>
+                    </div>
+                </div>
+                <div class="outside">
+                    <div class="pics">
+                        <a href="#"><img src="img/women.jpg" alt="women watches" height="400" width="500"></a>
+                        <a class="link" href="#"><p>For her</p></a>
+                    </div>
+                </div>
+
+
+                <div class="outside2">
+                    <div class="pics">
+                        <a href="#"><img src="img/kid.jpg" alt="kid watches" height="200" width="300"></a>
+                        <a class="link2" href="#"><p>For kids</p></a>
+                    </div>
+                </div>
+                <div class="outside2">
+                    <div class="pics">
+                        <a href="#"><img src="img/smart.jpg" alt="smartwatches" height="200" width="300"></a>
+                        <a class="link2" href="#"><p>Smartwatches</p></a>
+                    </div>
+                </div>
+                <div class="outside2">
+                    <div class="pics">
+                        <a href="#"><img src="img/jewelry.jpg" alt="jewelry" height="200" width="300"></a>
+                        <a class="link2" href="#"><p>Jewerly</p></a>
+                    </div>
+                </div>
+                
+
+                
+            </section>
+
+            <aside>
+                <h2>The Newest</h2>
+
+                <div class="watch">
+                    <a class="link2" style="color: black;" href="#">
+                        <img class="watchimg" src="img/citizen.jpg" alt="citizen watch" height="200" width="200">
+                        <p>Citizen</p>
+                        <p>$499.99</p>
+                    </a>
+                </div>
+
+                <div class="watch">
+                    <a class="link2" style="color: black;" href="#">
+                        <img class="watchimg" src="img/bulova.jpg" alt="citizen watch" height="200" width="200">
+                        <p>Bulova</p>
+                        <p>$899.99</p>
+                    </a>
+                </div>
+
+                <div class="watch">
+                    <a class="link2" style="color: black;" href="#">
+                        <img class="watchimg" src="img/bulova2.jpg" alt="citizen watch" height="200" width="200">
+                        <p>Bulova</p>
+                        <p>$399.99</p>
+                    </a>
+                </div>
+
+                <div class="watch">
+                    <a class="link2" style="color: black;" href="#">
+                        <img class="watchimg" src="img/zepelin.jpg" alt="citizen watch" height="200" width="200">
+                        <p>Zeppelin</p>
+                        <p>$999.99</p>
+                    </a>
+                </div>
+
+                <div class="watch">
+                    <a class="link2" style="color: black;" href="#">
+                        <img class="watchimg" src="img/zepelin2.jpg" alt="citizen watch" height="200" width="200">
+                        <p>Zeppelin</p>
+                        <p>$1499.99</p>
+                    </a>
+                </div>
+
+            </aside>
+
+
+            <footer>
+                <h2>Find us on socials!</h2>
+                <div class="fb">
+                    <a class="link3" href="#"><img src="img/fb.png" alt="facebook icon" height="100" width="100">
+                    </a>
+                </div>
+
+                <div class="yt">
+                    <a class="link3" href="#"><img src="img/yt.png" alt="youtube icon" height="100" width="100">
+                    </a>
+                </div>
+
+                <div class="ig">
+                    <a class="link3" href="#"><img src="img/ins.png" alt="instagram icon" height="100" width="100">
+                    </a>
+                </div>
+                
+                <div style="clear: both;"></div>
+
+                All rights reserved &copy;
+            </footer>
+
+
+        </div>
+</main>
+</body>
+</html>

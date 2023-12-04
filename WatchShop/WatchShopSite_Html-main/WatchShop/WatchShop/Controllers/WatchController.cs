@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WatchShop.Models;
 using WatchShop.Models.Services;
 
 namespace WatchShop.Controllers
 {
+    [Authorize]
     public class WatchController : Controller
     {
         private readonly IWatchService watchService;

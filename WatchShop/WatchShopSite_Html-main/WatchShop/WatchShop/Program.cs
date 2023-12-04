@@ -1,6 +1,8 @@
 using Data;
 using System.Xml.Linq;
 using WatchShop.Models.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace WatchShop
 {
@@ -9,13 +11,19 @@ namespace WatchShop
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+                        var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddRazorPages();
 
             builder.Services.AddDbContext<AppDbContext>();
-            builder.Services.AddTransient<IWatchService, EFWatchService>();
 
+            builder.Services.AddDefaultIdentity<IdentityUser>()
+            .AddEntityFrameworkStores<AppDbContext>();
+            builder.Services.AddTransient<IWatchService, EFWatchService>();
+            builder.Services.AddMemoryCache();
+            builder.Services.AddSession();
 
             var app = builder.Build();
 
@@ -31,9 +39,11 @@ namespace WatchShop
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();;
 
             app.UseAuthorization();
-
+            app.UseSession();
+            app.MapRazorPages();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
